@@ -18,6 +18,7 @@ To demo the cosmos and netty issue when using JPMS.
 > `Netty version` can be changed via uncomment specific netty.version in this project's pom file
 >
 > `module-info.java` should be changed in the source code of `azure-cosmos` before installing 
+
 |Behavior| Netty 4.1.77.Final| Netty 4.1.76.Final | Netty 4.1.69.Final|
 |--|--|--|--|
 |`module-info.java` removing `requires io.netty.transport.epoll;`|can work|can work|java.lang.module.FindException: Module io.netty.transport.classes.epoll not found, required by com.azure.cosmos|
